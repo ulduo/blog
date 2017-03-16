@@ -86,8 +86,8 @@ ul {
 }
 
 .costumitem:hover {
-	-ms-transform: scale(1.1, 1.1); 
-    -webkit-transform: scale(1.1, 1.1); 
+	-ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
 
 }
@@ -206,25 +206,25 @@ ul {
 	width: 100%;
 	position:absolute;
 	text-align: center;
-	top: 100px;
+	top: 10%;
 }
 
 .motto-section {
 	width: 100%;
 	position: absolute;
 	text-align: center;
-	top: 400px;
+	top: 60%;
 }
 
 .logo {
-	width:40%;
+	max-width: 40%;
 	transition: 0.2s ease-in-out all;
 }
 
 .logo:hover {
-	-ms-transform: scale(1.1, 1.1); 
-    -webkit-transform: scale(1.1, 1.1); 
-    transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .centro {
@@ -233,23 +233,23 @@ ul {
 
 
 .logoanimation-appear {
-	top: 60px;
+	top: 5%;
 	opacity: 0;
 }
 
 .logoanimation-appear.logoanimation-appear-active {
-	top: 100px;
+	top: 10%;
 	opacity: 1;
 	transition: 1.5s ease-in all;
 }
 
 .mottoanimation-appear {
-  	top: 500px;
+  	top: 65%;
 	opacity: 0;
 }
 
 .mottoanimation-appear.mottoanimation-appear-active {
-  	top: 400px;
+  top: 60%;
 	opacity: 1;
 	transition: 1.5s ease-in all;
 }
@@ -313,8 +313,8 @@ ul {
 }
 
 .navbar>ul>li:hover {
-	-ms-transform: scale(1.1, 1.1); 
-    -webkit-transform: scale(1.1, 1.1); 
-    transform: scale(1.1, 1.1);
-    border-bottom: 2px solid rgb(17, 242, 242);
+	-ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  border-bottom: 2px solid rgb(17, 242, 242);
 }
