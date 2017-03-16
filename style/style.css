@@ -88,9 +88,8 @@ ul {
 
 .costumitem:hover {
 	-ms-transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
-
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .costumitem-image  {
@@ -320,9 +319,11 @@ ul {
   border-bottom: 2px solid rgb(17, 242, 242);
 }
 
-@media screen and (max-width: 500px) {
-  .logo {
-      max-width: 80%;
-      transition: 0.2s ease-in-out all;
+@media only screen and (max-device-width: 520px) {
+   .logo {
+        max-width: 80%;
+        transition: 0.2s ease-in-out all;
+    }
+    .costumitem:hover {
+    }
   }
-}
