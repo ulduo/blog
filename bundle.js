@@ -22078,7 +22078,8 @@
 
 			this.circles = [];
 			this.minDistance = 200;
-			this.maxRadius = 3;
+			this.maxRadius = 4;
+			this.minRadius = 2;
 			this.velocities = [-1, -1, 1, 1, -1, -1, -1, -1, 1, -1, 1];
 
 			this.canvasHeight = canvasHeight;
@@ -22086,7 +22087,7 @@
 			var level = /*Math.floor(Math.random()*128+64)*/128;
 			var rgba = /*'rgba('+level+', '+level+', '+level+', 0.6)'*/'rgba(17, 242, 242, 0.8)';
 			for (var i = 0; i < numberOfCircles; i++) {
-				this.circles.push(new _Circle2.default(Math.floor(canvasWidth * Math.random()), Math.floor(canvasHeight * Math.random()), this.velocities[Math.floor(Math.random() * (this.velocities.length - 1))], this.velocities[Math.floor(Math.random() * (this.velocities.length - 1))], /*Math.floor(Math.random()*this.maxRadius)*/this.maxRadius, rgba));
+				this.circles.push(new _Circle2.default(Math.floor(canvasWidth * Math.random()), Math.floor(canvasHeight * Math.random()), this.velocities[Math.floor(Math.random() * (this.velocities.length - 1))], this.velocities[Math.floor(Math.random() * (this.velocities.length - 1))], this.minRadius + Math.floor(Math.random() * (this.maxRadius - this.minRadius)), rgba));
 			}
 		}
 
