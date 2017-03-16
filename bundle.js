@@ -22010,6 +22010,9 @@
 		}, {
 			key: 'initializeCliques',
 			value: function initializeCliques() {
+				if ($(window).width() < 560) {
+					this.numberOfCirclesPerClique = Math.floor(this.numberOfCirclesPerClique / 2);
+				}
 				for (var i = 0; i < this.numberOfCliques; i++) {
 					this.cliques.push(new _CircleClique2.default(this.numberOfCirclesPerClique, this.canvas.width, this.canvas.height));
 				}
