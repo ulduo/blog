@@ -21985,6 +21985,8 @@
 			_this.numberOfCliques = 1;
 			_this.cliques = [];
 			_this.fps = 25;
+
+			_this.animate = _this.animate.bind(_this);
 			return _this;
 		}
 
@@ -21998,7 +22000,7 @@
 				this.canvas.height = this.canvas.offsetHeight;
 				this.ctx = this.canvas.getContext('2d');
 				this.initializeCliques();
-				window.setInterval(this.animate.bind(this), 1000 / this.fps);
+				requestAnimationFrame(this.animate);
 			}
 		}, {
 			key: 'componentDidUpdate',
@@ -22023,6 +22025,7 @@
 					clique.draw(_this2.ctx);
 					clique.move(_this2.canvas.width, _this2.canvas.height);
 				});
+				requestAnimationFrame(this.animate);
 			}
 		}, {
 			key: 'render',
