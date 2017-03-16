@@ -319,3 +319,10 @@ ul {
   transform: scale(1.1, 1.1);
   border-bottom: 2px solid rgb(17, 242, 242);
 }
+
+@media screen and (max-width: 500px) {
+  .logo {
+      max-width: 80%;
+      transition: 0.2s ease-in-out all;
+  }
+}

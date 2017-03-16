@@ -21935,7 +21935,7 @@
 	});
 	var Database = function Database() {
 		return {
-			categories: [{ id: 'aboutus', title: 'ABOUT US' }, { id: 'ourservices', title: 'OUR SERVICES' }, { id: 'ourwork', title: 'OUR WORK' }, { id: 'contactus', title: 'CONTACT US' }],
+			categories: [{ id: 'aboutus', title: 'ABOUT' }, { id: 'ourservices', title: 'SERVICES' }, { id: 'ourwork', title: 'OUR WORK' }, { id: 'contactus', title: 'CONTACT' }],
 
 			pages: [{ id: 0, dataType: 'main', data: { motto: "We are ULDUO!", submotto: "We build everything!" } }, { id: 1, dataType: 'aboutus', data: { title: 'About Us', content: 'We build everything!' } }, { id: 2, dataType: 'ourservices', data: { title: 'About us', posts: [{ id: 0, title: 'Web Development', content: "We offer web solutions!", imgsrc: "./images/web.png" }, { id: 2, title: 'Mobile Solutions', content: "We offer mobile solutions!", imgsrc: "./images/mobile.png" }] } }, { id: 3, dataType: 'ourwork', data: { title: 'Our Work', posts: [{ id: 0, title: 'Microsoft\'s Core Systems', content: "We have build the Microsoft's core Systems!", imgsrc: "./images/microsoft.png" }, { id: 2, title: 'Apple\'s Main Themes', content: "Our designs are simple! They hit the ultimate sophistication!", imgsrc: "./images/apple.png" }, { id: 3, title: 'EcoSystem\'s Main Systems', content: "Our designs are simple! They hit the ultimate sophistication!", imgsrc: "./images/esys.png" }, { id: 4, title: 'State\'s Department SecSystems', content: "Our system designs are unique! They hit the ultimate sophistication!", imgsrc: "./images/statedep.png" }] } }]
 		};
