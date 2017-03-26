@@ -25131,7 +25131,6 @@
 			value: function render() {
 				var _this3 = this;
 
-				console.log(this.state);
 				return _react2.default.createElement(
 					'div',
 					{ id: 'contactus' },
